@@ -13,10 +13,10 @@ pacman::p_load(ape,
 
 
 # read SNP matrix
-TB_snp <- read.csv("/home/rgadalla/Projects/SNP clustering/448_snp_distance_matrix.csv", row.names = 1, check.names = F)
+TB_snp <- read.csv("", row.names = 1, check.names = F)
 
 # read lineage data
-lineage_data <- read.csv("/home/rgadalla/Projects/SNP clustering/448_snp_distance_lineage.csv", row.names = 1, check.names = F)
+lineage_data <- read.csv(""/, row.names = 1, check.names = F)
 
 # new dataframe
 df_lin <- lineage_data %>%
@@ -86,6 +86,6 @@ p + p1 + pa
 # contignecy table lineages and cluster ID
 df_lin$cluster_id <- clustx$clust$membership
 lin_clust_table <- table(df_lin$cluster_id, df_lin$simplified_lineage )
-write.csv(lin_clust_table, "/home/rgadalla/Projects/SNP clustering/Contignecy_Tables/20.csv")
+write.csv(lin_clust_table, "~/Contignecy_Tables/20.csv")
 
 
